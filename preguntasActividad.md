@@ -23,3 +23,10 @@ CASOS DE PRUEBA
 3. Ingresan caracteres
 4. espacio vacio
 5. Con mayuscula
+
+¿Qué resultados arrojan sus Test con estas entradas: “aca”, “acas”, “h”?
+1. Verdadero
+2. Falso
+3. Verdadero
+
+
