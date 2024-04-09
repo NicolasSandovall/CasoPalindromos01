@@ -16,3 +16,10 @@ Split separa = "adan","nada"
 Reverse invierte = ""adan", "nada""
 Join une los string en uno espacio= "adan nada"
 "===" arroja True
+
+CASOS DE PRUEBA
+1. con solo una letra
+2. una frase con espacios
+3. Ingresan caracteres
+4. espacio vacio
+5. Con mayuscula
