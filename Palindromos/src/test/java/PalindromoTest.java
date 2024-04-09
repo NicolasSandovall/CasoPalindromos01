@@ -22,13 +22,28 @@ class PalindromoTest {
     }
 
     @Test
-    void validacionPalindromosTest1() {
-        Assertions.assertEquals(true, pal.validacionPalindromos("hola aloh"));
+    void validacionPalindromosMayusculas() {
+        Assertions.assertEquals(true, pal.validacionPalindromos("Level"));
 
 
     }
     @Test
-    void validacionPalindromosTest2(){
-        Assertions.assertEquals(true, pal.validacionPalindromos("l"));
+    void validacionPalindromosCantCaracteres(){
+        Assertions.assertEquals(false, pal.validacionPalindromos("l"));
+    }
+
+    @Test
+    void validacionPalindromosVacio(){
+        Assertions.assertEquals(false, pal.validacionPalindromos("  "));
+    }
+
+    @Test
+    void validacionPalindromosEspaciosDistintos(){
+        Assertions.assertEquals(true, pal.validacionPalindromos("Now, sir, a war is won"));
+    }
+
+    @Test
+    void validacionPalindromosCaracteresDist(){
+        Assertions.assertEquals(false, pal.validacionPalindromos("120"));
     }
 }
