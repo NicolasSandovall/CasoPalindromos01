@@ -1,12 +1,27 @@
 package org.example;
 
 public class Palindromo {
-    public static boolean validacionPalindromos (String cadena1){
-        for (int i = 0, j = cadena1.length() - 1; i < j; i++, j--){
-            if (cadena1.charAt(i) != cadena1.charAt(j)){
+    Object cadena ;
+    public static boolean introduceUnString (Object cadena){
+        if (cadena instanceof String){
+            return validacionPalindromos((String) cadena);
+        }else{
+            return false;
+        }}
+    public static boolean validacionPalindromos (String cadena){
+        for (int i = 0, j = cadena.length() - 1; i < j; i++, j--){
+            if (cadena.charAt(i) != cadena.charAt(j)){
                 return false;
             }
         }
         return true;
     }
-}
+    public static void imprimirResultados (boolean resultado){
+        System.out.println(resultado);
+    }
+
+    public static void main(String[] args) {
+        imprimirResultados((introduceUnString("level")));
+
+    }}
+

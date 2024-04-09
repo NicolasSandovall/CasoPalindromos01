@@ -23,3 +23,31 @@ CASOS DE PRUEBA
 3. Ingresan caracteres
 4. espacio vacio
 5. Con mayuscula
+
+¿Qué resultados arrojan sus Test con estas entradas: “aca”, “acas”, “h”?
+1. Verdadero
+2. Falso
+3. Verdadero
+
+ANALISIS:
+- Caso de prueba 1:
+Input: 200 (número entero)
+Output: El programa se cae
+
+- Caso de prueba 2:
+Input: “” (cadena vacía)
+Output: Verdadero a palindromo
+
+- Caso de prueba 3:
+Input: “aaabccbaaa”
+Output: Verdadero a palindromo
+
+- Caso de prueba 4:
+Input: “ahabccbaaa”
+Output: Falso
+
+- Caso de prueba 5:
+Input: “La tele letal”
+Output: Falso
+
+
