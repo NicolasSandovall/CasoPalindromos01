@@ -23,32 +23,36 @@ class PalindromoTest {
 
     @Test
     void validacionPalindromosMayusculas() {
-        Assertions.assertEquals(true, pal.validaString("Level"));
+        Assertions.assertEquals(true, pal.stringValido("Level"));
 
 
     }
     @Test
     void validacionPalindromosLargo(){
-        Assertions.assertEquals(false, pal.validaString("a"));
+        Assertions.assertEquals(false, pal.stringValido("a"));
     }
 
     @Test
     void validacionPalindromosVacio(){
-        Assertions.assertEquals(false, pal.validaString("  "));
+        Assertions.assertEquals(false, pal.stringValido("  "));
     }
 
     @Test
     void validacionPalindromosEspaciosDistintos(){
-        Assertions.assertEquals(true, pal.validaString("La tele letal"));
+        Assertions.assertEquals(true, pal.stringValido("La tele letal"));
     }
 
     @Test
     void validacionPalindromosCaracteresDist(){
-        Assertions.assertEquals(false, pal.validaString(10));
+        Assertions.assertEquals(false, pal.stringValido("10"));
     }
     @Test
     void validacionPalindromoCaracteresString(){
-        Assertions.assertEquals(true, pal.validaString("Now, sir, a war is won!"));
+        Assertions.assertEquals(true, pal.stringValido("Now, sir, a war is won!"));
+    }
+    @Test
+    void validacionStrinCaracteresInvalidos(){
+        Assertions.assertEquals(false, pal.stringValido("---"));
     }
 
 
