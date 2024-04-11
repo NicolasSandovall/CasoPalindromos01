@@ -15,7 +15,6 @@ class MainTest {
     void hacerCadenaIdonea() {
         assertEquals("hola", Main.hacerCadenaIdonea("H##$o[¨[¨**L   ,.,-´{´0897895a"));
         assertEquals("", Main.hacerCadenaIdonea("   3552352532$%#%#,.,---:;:$"));
-sa
     }
 
     @org.junit.jupiter.api.Test
